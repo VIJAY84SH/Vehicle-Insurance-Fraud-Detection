@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Insurance Fraud Detection</title>
+    <link rel="stylesheet" href='/staticFiles/style.css' />
+</head>
+
+<body>
+
+    <div style="color:rgb(16, 15, 15)">
+        <form action="{{url_for('predict')}}" method="post">
+
+            <input type="text" name="Age" placeholder="Age" required="required" />
+		    
+			      <h3>Week Of Month</h3>
+            <select name="Week Of Month" id="research" required="required">
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <h3>Make</h3>
+            <select name="Make" id="research" required="required">
+                <option value="0">Accura</option>
+                <option value="1">BMW</option>
+                <option value="2">Chevrolet</option>
+                <option value="3">Dodge</option>
+                <option value="4">Ferrari</option>
+                <option value="5">Ford</option>
+                <option value="6">Honda</option>
+                <option value="7">Jaguar</option>
+                <option value="8">Lexus</option>
+                <option value="9">Mazda</option>
+                <option value="10">Mecedes</option>
+                <option value="11">Mercury</option>
+                <option value="12">Nisson</option>
+                <option value="13">Pontiac</option>
+                <option value="14">Porche</option>
+                <option value="15">Saab</option>
+                <option value="16">Saturn</option>
+                <option value="17">Toyota</option>
+                <option value="18">VW</option>
+            </select>
+            
+            <h3>Day Of Week Claimed</h3>
+            <select name="Day Of Week Claimed" id="research" required="required">
+                <option value="0">Friday</option>
+                <option value="1">Monday</option>
+                <option value="2">Saturday</option>
+                <option value="3">Sunday</option>
+                <option value="4">Thursday</option>
+                <option value="5">Tuesday</option>
+                <option value="6">Wednesday</option>
+            </select>
+
+       
+            <h3>Week Of Month Claimed</h3>
+            <select name="Week Of Month Claimed" id="research" required="required">
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+                <option value="4">5</option>
+            </select>
+
+            <h3>Fault</h3>
+            <select name="Fault" id="research" required="required">
+              <option value="0">Policy Holder</option>
+              <option value="1">Third Party</option>
+            </select>   
+            
+            <h3>Policy Type</h3>
+            <select name="Policy Type" id="research" required="required">
+                <option value="0">Sedan - All Perils</option>
+                <option value="1">Sedan - Collision</option>
+                <option value="2">Sedan - Liability</option>
+                <option value="3">Sport - All Perils</option>
+                <option value="4">Sport - Collision</option>
+                <option value="5">Sport - Liability</option>
+                <option value="6">Utility - All Perils</option>
+                <option value="7">Utility - Collision</option>
+                <option value="8">Utility - Liability</option>
+            </select>
+
+            <h3>Vehicle Category</h3>
+            <select name="Vehicle Category" id="research" required="required">
+              <option value="0">Sedan</option>
+              <option value="1">Sport</option>
+              <option value="2">Utility</option>
+            </select>
+
+            <h3>Vehicle Price</h3>
+            <select name="Vehicle Price" id="research" required="required">
+                <option value="0">20000 to 29000</option>
+                <option value="1">30000 to 39000</option>
+                <option value="2">40000 to 59000</option>
+                <option value="3">60000 to 69000</option>
+                <option value="4">less than 20000</option>
+                <option value="5">more than 69000</option>
+            </select>
+
+            <h3>Past Number Of Claims</h3>
+            <select name="Past Number Of Claims" id="research" required="required">
+                <option value="0">1</option>
+                <option value="1">2 to 4</option>
+                <option value="2">more than 4</option>
+                <option value="3">none</option>
+            </select>
+
+            <h3>Age Of Vehicle	</h3>
+            <select name="Age Of Vehicle	" id="research" required="required">
+                <option value="0">2 Years</option>
+                <option value="1">3 Years</option>
+                <option value="2">4 Years</option>
+                <option value="3">5 Years</option>
+                <option value="4">6 Years</option>
+                <option value="5">7 Years</option>
+                <option value="6">More than 7</option>
+                <option value="7">New</option>
+            </select>
+             
+            <h3>Age Of Policy Holder</h3>
+            <select name="Age Of Policy Holder" id="research" required="required">
+              <option value="0">16 to 17</option>
+              <option value="1">18 to 20</option>
+              <option value="2">21 to 25</option>
+              <option value="3">26 to 30</option>
+              <option value="4">31 to 35</option>
+              <option value="5">36 to 40</option>
+              <option value="6">41 to 50</option>
+              <option value="7">51 to 65</option>
+              <option value="8">over 65</option>
+            </select>
+            
+            <h3>Number Of Suppliments</h3>
+            <select name="Number Of Suppliments" id="research" required="required">
+              <option value="0">1 to 2</option>
+              <option value="1">3 to 5</option>
+              <option value="2">more than 5</option>
+              <option value="3">None</option>
+            </select>
+            
+            <h3>Base Policy</h3>
+            <select name="Base Policy" id="research" required="required">
+              <option value="0">All Perils</option>
+              <option value="1">Collision</option>
+              <option value="2">Liability</option>
+            </select>
+            	
+            <br><br><button id="sub" type="submit">Prediction</button>
+            <br>
+
+        </form>
+
+        <br><br>
+		{{ prediction_text }}
+    </div>
+  
+</body>
+
+</html>

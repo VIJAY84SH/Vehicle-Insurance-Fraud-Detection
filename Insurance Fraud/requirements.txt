@@ -1,0 +1,13 @@
+ <input type="text" name="tenure" placeholder="Tenure" required="required" />
+
+
+
+
+              <h3>Week Of Month Claimed</h3>
+            <select name="Week Of Month Claimed" id="research" required="required">
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+                <option value="4">5</option>
+            </select>

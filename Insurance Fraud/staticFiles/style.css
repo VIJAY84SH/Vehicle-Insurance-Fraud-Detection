@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(54, 132, 101);
+    text-align: center;
+}
+
+#research{
+    width: 200px;
+    height: 43px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#research:hover{
+    background-color: rgb(105, 190, 230);
+}
