@@ -12,11 +12,6 @@ The goal is to develop and implement a fraud detection system that leverages adv
 
 # 𝐄𝐃𝐀
 # Primary Analysis
-From the pie plot, we understand that this dataset is imbalanced, that means we don't have enough samples from each
-class and we will have problems to train the model, so we have to balance this dataset before training the model. We do
-
-this in the data preprocessing section
-
 The amount of claims in different months does not differ so much that we can find out a special point from it
 Top 5 Make of claims in order is:
 
@@ -27,8 +22,15 @@ Top 5 Make of claims in order is:
 5.Chevrole
 
 Most accidents occur in Urban areas and the remaining occur in Rural areas.
-Most driver are men and than women
+![Accident area](https://github.com/VIJAY84SH/Vehicle-Insurance-Fraud-Detection/assets/95535340/473598ac-0c66-4e2e-8f96-24a535897ff7)
+
+Sedan vehicle categories has more chancea of fraud 
+![image](https://github.com/VIJAY84SH/Vehicle-Insurance-Fraud-Detection/assets/95535340/bf56c7ba-036e-4d8d-8aab-963b5a31f9be)
+
 Most of the frauds are in age of 26 to 45
+![image](https://github.com/VIJAY84SH/Vehicle-Insurance-Fraud-Detection/assets/95535340/f0f979c4-7649-459e-aff1-d4a54b617d32)
+
+
 
 # 𝐂𝐋𝐀𝐒𝐒 𝐈𝐌𝐁𝐀𝐋𝐀𝐍𝐂𝐄
  Handling Class Imbalance using SMOTE
