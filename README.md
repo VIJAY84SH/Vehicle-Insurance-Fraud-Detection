@@ -31,7 +31,7 @@ Most driver are men and than women
 Most of the frauds are in age of 26 to 45
 
 # 𝐂𝐋𝐀𝐒𝐒 𝐈𝐌𝐁𝐀𝐋𝐀𝐍𝐂𝐄
-# Handling Class Imbalance using SMOTE
+ Handling Class Imbalance using SMOTE
 SMOTE is a popular technique used in machine learning to address class imbalance by generating synthetic samples for the minority class.
 It works by creating synthetic instances of the minority class by interpolating between existing minority class instances.
 This method helps in balancing the class distribution, making the dataset more suitable for training models.
@@ -45,9 +45,9 @@ This method helps in balancing the class distribution, making the dataset more s
  Recall score for class1 is less so some claim can not be detected
 
  # 𝐂𝐨𝐧𝐜𝐥𝐮𝐬𝐢𝐨𝐧
- * A Vehicle Insurance can be detected by ML algorithm and avoid the losses of company
- * Age 26 To 46, Sedan category car, which have maximum chances of fraud
- * In sport and utility category of car having very less chance of fraud
+  A Vehicle Insurance can be detected by ML algorithm and avoid the losses of company
+  Age 26 To 46, Sedan category car, which have maximum chances of fraud
+ In sport and utility category of car having very less chance of fraud
 
 
 
