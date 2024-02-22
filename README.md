@@ -45,18 +45,11 @@ This method helps in balancing the class distribution, making the dataset more s
  Recall score for class1 is less so some claim can not be detected
 
  # 𝐂𝐨𝐧𝐜𝐥𝐮𝐬𝐢𝐨𝐧
-  A Vehicle Insurance can be detected by ML algorithm and avoid the losses of company
-  Age 26 To 46, Sedan category car, which have maximum chances of fraud
- In sport and utility category of car having very less chance of fraud
-
-
-
-
-
-
-![image](https://github.com/VIJAY84SH/Vehicle-Insurance-Fraud-Detection/assets/95535340/d1d41f23-6e25-4d98-8187-35fd5c7d1ee3)
+In conclusion, a machine learning algorithm can effectively identify potential cases of insurance fraud, particularly among sedan category cars with owners aged between 26 to 46, which exhibit higher susceptibility to fraudulent activities. Conversely, vehicles categorized as sports and utility vehicles demonstrate significantly lower probabilities of being associated with fraudulent claims
 
 Languages : Python, HTML, CSS
+
 Platform : Jupyter Notebook, Visual Studio Code
+
 Library Used : Numpy, Pandas, matplotlib, seaborn, Scikit-learn
 
