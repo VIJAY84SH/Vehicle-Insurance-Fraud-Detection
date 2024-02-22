@@ -40,6 +40,10 @@ SMOTE is a popular technique used in machine learning to address class imbalance
 It works by creating synthetic instances of the minority class by interpolating between existing minority class instances.
 This method helps in balancing the class distribution, making the dataset more suitable for training models.
 
+# 𝐌𝐨𝐝𝐞𝐥 𝐑𝐞𝐬𝐮𝐥𝐭𝐬
+![image](https://github.com/VIJAY84SH/Vehicle-Insurance-Fraud-Detection/assets/95535340/cbd2319c-69a9-493a-9f8e-04f03aafda45)
+
+
 # 𝐀𝐝𝐯𝐚𝐧𝐭𝐚𝐠𝐞𝐬:
  1. Insurance company no need to assign specialists
  2. Save cost and time 
